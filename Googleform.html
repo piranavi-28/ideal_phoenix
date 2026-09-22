@@ -6,127 +6,46 @@
     <title>Googleform SRF</title>
 </head>
 <body>
-    <h1><b>Student Registration Form</b></h1><br><br>
-    <label>Roll no. :</label>
-    <input type="text" size="53"><br><br>
-    <label>Student name :</label>
-    <input type="text" placeholder="First Name"><label> - </label> <input type="text" placeholder="Last Name"><br><br>
-    <label>Father's name :</label>
-    <input type="text" size="47"><br><br>
-    <label>Date of birth :</label>
-    <select>
-        <option>Day</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
-        <option>17</option>
-        <option>18</option>
-        <option>19</option>
-        <option>20</option>
-        <option>21</option>
-        <option>22</option>
-        <option>23</option>
-        <option>24</option>
-        <option>25</option>
-        <option>26</option>
-        <option>27</option>
-        <option>28</option>
-        <option>29</option>
-        <option>30</option>
-        <option>31</option>
-    </select>
-    <select>
-        <option>Month</option>
-        <option>JAN</option>
-        <option>FEB</option>
-        <option>MAR</option>
-        <option>APR</option>
-        <option>MAY</option>
-        <option>JUN</option>
-        <option>JUL</option>
-        <option>AUG</option>
-        <option>SEP</option>
-        <option>OCT</option>
-        <option>NOV</option>
-        <option>DEC</option>
-    </select>
-    <select>
-        <option>Year</option>
-        <option>2000</option>
-        <option>2001</option>
-        <option>2002</option>
-        <option>2003</option>
-        <option>2004</option>
-        <option>2005</option>
-        <option>2006</option>
-        <option>2007</option>
-        <option>2008</option>
-        <option>2009</option>
-        <option>2010</option>
-        <option>2011</option>
-        <option>2012</option>
-        <option>2013</option>
-        <option>2014</option>
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        <option>2018</option>
-        <option>2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option>
-        <option>2026</option>
-    </select>
-    (DD-MM-YYYY)</label><br><br>
-    <label>Mobile no. :</label>
-    <input type="text" size="1" placeholder="+91"><label> - </label><input type="text"><br><br>
-    <label>Email id :</label>
-    <input type="email" size="53"><br><br>
-    <label>Password :</label>
-    <input type="password"size="52"><br><br>
-    <label>Gender :</label>
-    <input type="radio" name="Gender">
-    <label>Male</label>
-    <input type="radio" name="Gender">
-    <label>Female</label><br><br>
-    <label>Department :</label>
-    <input type="checkbox" name="1">
-    <label>CSE</label>
-    <input type="checkbox" name="2">
-    <label>IT</label>
-    <input type="checkbox" name="3">
-    <label>ECE</label>
-    <input type="checkbox" name="4">
-    <label>Civil</label>
-    <input type="checkbox" name="5">
-    <label>Mech</label><br><br>
-    <label>Course :</label>
-    <select >
-        <option>----------Select Current Course's----------</option>
-        <option>B.tech</option>
-        <option>B.E</option>
-    </select><br><br>
-    <label>Student photo :</label>
-    <button>Choose File</button> No file chosen<br><br>
-    <label>City :</label>
-    <input type="text" size="57"><br><br>
-    <label>Address : &nbsp;</label>
-    <textarea></textarea>
+    <form>
+        <h1><b>Student Registration Form</b></h1><br><br>
+        <table>
+            <tr>     
+                <td>Roll no. :</td><td><input type="text" size="48"></td>
+            </tr>
+            <tr>
+                <td>Student name:</td><td><input type="text" placeholder="First Name"><label> - </label> <input type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Father's name :</td><td><input type="text" size="48"></td>
+            </tr>
+            <tr>
+                <td>Date of birth :</td><td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Mobile no. :</td><td><input type="text" size="1" placeholder="+91"><label> - </label><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email id :</td><td><input type="email" size="48"></td>
+            </tr>
+            <tr>
+                <td>Password :</td><td><input type="password"size="48"></td>
+            </tr>
+            <tr>
+                <td>Gender :</td><td><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female</td>
+            </tr>
+            <tr>
+                <td>Department:</td><td><input type="checkbox" name="1">CSE<input type="checkbox" name="2">IT<input type="checkbox" name="3">ECE<input type="checkbox" name="4">Civil<input type="checkbox" name="5">Mech</td>
+            </tr>
+            <tr>
+                <td>Course :</td><td><select><option>----------Select Current Course's----------</option><option>B.tech</option><option>B.E</option></select></td>
+            </tr>        
+            <tr>
+                <td>Student photo :</td><td><button>Choose File</button> No file chosen</td>
+            </tr>
+            <tr>
+                <td>City :</td><td><input type="text" size="48"></td>
+            </tr>
+            <tr>
+                <td>Address : &nbsp;</td><td><textarea></textarea></td>
 </body>
 </html>
